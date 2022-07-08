@@ -1,0 +1,16 @@
+.header__title {
+    font-size: 50px;
+    color: red;
+}
+.search {
+    input {
+        background-color: aqua;
+    }
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
