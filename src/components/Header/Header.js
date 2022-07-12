@@ -9,15 +9,17 @@ import style from "./header.module.scss";
 
 const Header = () => {
   return (
-    <div>
-      <div>
+    <div className={style.header}>
+      <div className={style.header__top}>
         <HeaderTitle style={style} />
         <Search style={style} />
-        <NotificationBar />
-        <Profile />
+        <div className={style.user}>
+          <NotificationBar style={style} />
+          <Profile style={style} />
+        </div>
       </div>
-      <div>
-        <Button />
+      <div className={style.header__bottom}>
+        <Button style={style} />
         <Filter style={style} />
       </div>
     </div>

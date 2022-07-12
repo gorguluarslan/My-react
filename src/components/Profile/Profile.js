@@ -1,14 +1,15 @@
 import React from "react";
+import profile from "../../assets/image/profile.png";
 
-const Profile = () => {
+const Profile = ({ style }) => {
   return (
-    <div className="profile__wrapper">
-      <div className="wrapper__left">
-        <span>image</span>
+    <div className={style.profile}>
+      <div className={style.profile__left}>
+        <img src={profile} alt={"picture"} />
       </div>
-      <div className="wrapper__right">
-        <span>Name Surname</span>
-        <a href="mailto:mailaddress@gmail.com">Mail</a>
+      <div className={style.profile__right}>
+        <span>Hilal {"&"} Güney</span>
+        <a href="mailto:asfakmahmudbd@gmail.com">asfakmahmudbd@gmail.com</a>
       </div>
     </div>
   );

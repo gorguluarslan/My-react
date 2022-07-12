@@ -1,11 +1,16 @@
 import React from "react";
+import {
+  MessageIcon,
+  NotificationIcon,
+  SettingsIcon,
+} from "../../assets/icons/Icon";
 
-const NotificationBar = () => {
+const NotificationBar = ({ style }) => {
   return (
-    <div>
-      <span>ıcon1</span>
-      <span>ıcon2</span>
-      <span>ıcon3</span>
+    <div className={style.notification}>
+      <MessageIcon fill="#8B8B8B" />
+      <NotificationIcon fill="#8B8B8B" />
+      <SettingsIcon fill="#8B8B8B" />
     </div>
   );
 };

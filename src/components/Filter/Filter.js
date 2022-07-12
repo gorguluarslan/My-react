@@ -1,20 +1,20 @@
 import React from "react";
-import SortDownButton from "../SortDownButton/SortDownButton";
+import { SortIcon } from "../../assets/icons/Icon";
 
 const Filter = (props) => {
   const style = props.style;
   return (
     <div className={style.filter}>
       <div className={style.filter__left}>
-        <span>1-All</span>
-        <span>2-All</span>
-        <span>3-All</span>
-        <span>4-All</span>
-        <span>5-All</span>
+        <span>All</span>
+        <span>Inactive</span>
+        <span>Active</span>
+        <span>On Hold</span>
+        <span>Completed</span>
       </div>
       <div className={style.filter__right}>
-        <span>6-Default</span>
-        <SortDownButton />
+        <span>Default</span>
+        <SortIcon fill={"#3C557A"} />
       </div>
     </div>
   );
